@@ -1,0 +1,421 @@
+.news{
+    background-color: $clr-dark;
+    &__wrapper{
+        @include centerAll;
+        padding: 2rem 0;
+        p{
+            color: $clr-light;
+        }
+    }
+}
+
+//banner start
+
+.banner{
+background-color: $clr-gray;
+padding: 2rem 0;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+
+        img{
+            width: 100rem;
+            padding-left: 10rem;
+        }
+    }
+
+    &__text{
+        color: $clr-l-gray;
+        text-align: center;
+        
+
+        h1{
+            color: $clr-light;
+            font-size: 6rem;
+            text-align: center;
+            font-weight: 400;
+            span{
+                font-weight: 250;
+            }
+        }
+        
+        p{
+            margin-top: 1rem;
+            font-size: 18px;
+        }
+
+        &__download{
+            padding: 1.5rem 5rem;
+            @include grid(2,.5rem);
+            grid-template-columns: 2fr .5fr;
+
+            a{
+                background-color: $clr-blue;
+                color: $clr-light;
+                width: 26rem;
+                padding: .5rem 0;
+                line-height: 3rem;
+                font-weight: 200;
+                
+                span{
+                    font-weight: 500;
+                    font-size: 2rem;
+                }
+            }
+            
+            a.down{
+                width: 6rem;
+            }
+
+            i{
+                margin-top: 2.5rem;
+            }
+        }
+        &__version{
+            background-color: $clr-dark;
+            width: 30rem;
+            padding: 6px 0;
+            margin: 0 6rem;
+            border-radius: 1rem;
+        }
+
+        &__disclaimer{
+            margin-top: 2rem;
+            padding: 0 8rem;
+        }
+    }
+}
+
+//banner end
+
+//tabs start
+
+.tabs{
+    &__items{
+        @include grid(4, 2rem);
+
+        a{
+            text-align: center;
+            color: $clr-l-gray;
+            padding: 3rem;
+
+            &:hover{
+                background-color: #e6e6e6;
+            }
+
+            &.intel:hover{
+                i{
+                    color: rgb(238, 25, 25);
+                    
+                } 
+            }
+            &.debug:hover{
+                i{
+                    color: rgb(47, 97, 236);
+                } 
+            }
+            &.code:hover{
+                i{
+                    color: rgb(255, 252, 98);
+                } 
+            }
+            &.extension:hover{
+                i{
+                    color: rgb(0, 158, 40);
+                } 
+            }
+
+            i{  
+                font-size: 5rem;
+                padding-bottom: 2rem;
+            }
+
+            P{
+                font-size: 2.4rem;
+            }
+        }
+    }  
+}
+
+//tabs end
+
+//tweet start
+.tweet{
+    background-color: $clr-l-light;
+    padding-top: 7rem;
+    position: relative;
+
+    img{
+        display: inline;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 4rem;
+    }
+
+    .tns-controls{
+        display: block;
+        justify-content: space-between;
+
+        button{
+            top: 45%;
+            z-index: 999;
+            border: 1px solid $clr-blue;
+            border-radius: 4rem;
+            padding: 0 1.5rem;  
+            background: $clr-light;
+            font-size: 3.5rem;
+            color: $clr-blue;
+            font-weight: 550;
+
+            &:first-child{
+                position: absolute;
+                left: 18rem;
+            }
+
+            &:last-child{
+                position: absolute;
+                right: 18rem;
+            }
+        } 
+    }
+
+    .tns-nav{
+        text-align: center;
+    }
+
+    .tns-controls .tns-controls-active{
+        background-color: $clr-dark;
+    }
+
+    .tns-nav .tns-nav-active{
+        background-color: $clr-blue;
+        border-color: $clr-blue;
+    }
+
+    .tns-nav button{
+        background-color: $clr-light;
+        border: 1px solid $clr-dark;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 5rem;
+        margin: 5rem 1rem ;
+    }
+
+  
+    &__card__item{
+        margin-right: 0rem;
+        padding: 0 0rem;
+
+        &__content{
+            display: flex;
+        }
+        
+        &__text{
+            margin-left: 2rem;
+            i{
+                position: relative;
+                left: 18rem;
+                color: $clr-brand;
+            }
+
+            p{
+                width: 34rem;
+
+                &.tag{
+                    padding-top: 5px;
+                    font-weight: 500;
+                }
+            }
+
+            span{
+                color: #75459f;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+//tweet end
+
+//content start
+
+.content{
+padding: 6rem 0;
+    &__items{
+        @include centerBetween;
+        gap: 15rem;
+        
+        img{
+            width: 45rem;
+            transform: translateY(1.5rem);
+        }
+    }
+
+    &__text{
+        width: 60%;
+
+        h3{
+            font-size: 3.5rem;   
+            font-weight: 290;
+        }
+        p{
+            font-size: 2.5rem;
+            font-weight: 300;
+            padding: 1rem 0;
+            line-height: 5rem;
+        }
+    }
+}
+
+//content end
+//content start
+
+.contentalt{
+    background-color: $clr-l-light;
+    padding: 6rem 0;
+        &__items{
+            @include centerBetween;
+            gap: 5rem;
+            
+            img{
+                width: 45rem;
+                transform: translateY(1.5rem);
+            }
+        }
+    
+        &__text{
+            width: 60%;
+    
+            h3{
+                font-size: 3.5rem;   
+                font-weight: 290;
+            }
+            p{
+                font-size: 2.5rem;
+                font-weight: 300;
+                padding: 1rem 0;
+                line-height: 5rem;
+            }
+        }
+    }
+
+//content end
+
+//codefor start
+
+.codefor{
+padding: 7rem 0;
+background-color: $clr-l-light;
+    &__wrapper{
+        text-align: center;
+        h2{
+            
+            font-weight: 500;
+            font-size: 3rem
+        }
+    }
+
+    &__grid{
+        padding-top: 6rem;
+        @include grid(6,10rem);
+
+        &__items{
+            ul{
+                li{
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 4rem;
+                    font-size: 2rem;
+                    img{
+                        width: 5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &__marketplace{
+        padding-bottom: 4rem;
+    }
+
+    &__button{
+        a{
+            padding: 2rem 2rem;
+            font-size: 2rem;
+        }
+    }
+}
+
+//codefor end 
+
+//os start
+
+.os{
+    padding: 6rem 0;
+    &__wrapper{
+        @include grid (3, 10rem);
+        
+    }
+
+    &__item{
+        text-align: center;
+        img{
+            width: 15rem;
+            margin: 2rem 0;
+            max-height: 150px;
+        }
+
+        &__content{
+            ul{
+                li{
+                    padding: 1px;
+                }
+            }
+
+            a{
+                font-weight: 300;
+                text-align: center;
+                line-height: 1.7rem;
+                padding: 2rem 0;
+                margin-left: 2px;
+                font-size: 1.8rem;
+                
+                span{
+                    font-size: 12px;
+                }
+            }
+
+            a.main{
+                width: 40rem;
+            }
+        }
+    }
+    &__bottomcontent{
+        @include grid(2, 0);
+        @include centerAll;
+        padding: 2rem 2rem;
+        grid-template-columns: .5fr 1fr;
+
+        &__left{
+            ul{
+                li{
+                    padding: .8rem 0;
+                }
+            }
+        }
+
+        &__right{
+            ul{
+                li{
+                    text-align: start;
+                    a{
+                        padding: 1rem 2px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//os end

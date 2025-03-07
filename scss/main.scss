@@ -1,0 +1,21 @@
+@import "./01-variable";
+@import "./02-base";
+@import "./03-grid";
+@import "./04-mixins";
+@import "./05-resets";
+@import "./06-utilities";
+
+
+@import "../components/footer";
+@import "../components/header";
+
+@import "../pages/landing";
+
+a.link{
+    &:hover{
+        color: $clr-l-blue;
+        text-decoration: underline;
+    }
+}   
+
+

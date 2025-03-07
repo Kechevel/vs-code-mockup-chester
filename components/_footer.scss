@@ -1,0 +1,36 @@
+.footer{
+    padding: 8rem;
+    background-color: $clr-l-light;
+
+    &__wrapper{
+        text-align: center;
+    }
+
+    &__advertise{
+        @include grid(2,0);
+        @include centerBetween;
+        padding: 0 15rem;
+        margin-bottom: 8rem;
+
+        &__item{
+            width: 25rem;
+        }
+        
+        &__item2{
+            width: 28rem;
+        }
+
+        p{
+            padding-top: .5rem;
+        }
+    }
+
+    &__terms{
+        padding: 0 32rem;
+        line-height: 3rem;
+    }
+
+    strong{
+        font-size: 2rem;
+    }
+}
